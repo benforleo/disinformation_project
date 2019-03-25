@@ -51,8 +51,8 @@ def clean_doc(doc):
     import re
     import string
     
-    more_stops = ['i', 'it', 'him', 'they', 'he', 'her', 'its', 'be', 'the', 'you',
-                 'not', 'we', 'a', 'me', 'like', 'his', 'this']
+    #more_stops = ['i', 'it', 'him', 'they', 'he', 'her', 'its', 'be', 'the', 'you',
+    #             'not', 'we', 'a', 'me', 'like', 'his', 'this']
     pattern = re.compile('\.+')
     
     token_list = []
@@ -63,7 +63,7 @@ def clean_doc(doc):
             
         elif (token.lemma_ != "-PRON-") and (not token.is_punct) and (not token.is_space) \
         and (not bool(re.fullmatch(pattern, token.lemma_)))\
-        and (not token.is_stop):
+        and (not token.is_stop) and (not token.lemma_ == '�'):
             
             token_list.append(token.lemma_.lower().strip())
             
@@ -72,7 +72,7 @@ def clean_doc(doc):
             token_list.append(token.lower_)
         
     
-    token_list = [token for token in token_list if token not in more_stops]
+    #token_list = [token for token in token_list if token not in more_stops]
             
     
     return token_list
