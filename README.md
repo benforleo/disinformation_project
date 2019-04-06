@@ -6,6 +6,8 @@ In a [working paper](http://pwarren.people.clemson.edu/Linvill_Warren_TrollFacto
 
 The purpose of this project is to test whether Linville and Warren's account categorization scheme can be replicated quantitatively using unsupervised learning techniques.
 
+#### To view the jupyter file with working Plotly visuals, click [here](https://nbviewer.jupyter.org/github/benforleo/disinformation_project/blob/master/labeled_tweets.ipynb)
+
 
 Tools: Python (spaCy, gensim, Pandas, Scikit-Learn, Plotly) 
 
