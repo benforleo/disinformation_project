@@ -4,12 +4,15 @@ On August 27, 2018, the data journalism organization FiveThirtyEight published 2
 
 In a [working paper](http://pwarren.people.clemson.edu/Linvill_Warren_TrollFactory.pdf) describing their work, Linville and Warren discuss the qualitiative procedure that they employed to label accounts.
 
-The purpose of this project is to test whether Linville and Warren's account categorization scheme can be replicated quantitatively using unsupervised learning techniques.
+The purpose of this project is twofold: 
+
+- to test whether Linville and Warren's account categorization scheme can be replicated quantitatively using unsupervised learning techniques.
+- to investigate whether multi-class classifcation models could be trained to label accounts in an unlabeled dataset of Russian troll tweets. 
 
 #### To view the jupyter file with working Plotly visuals, click [here](https://nbviewer.jupyter.org/github/benforleo/disinformation_project/blob/master/labeled_tweets.ipynb)
 
 
-Tools: Python (spaCy, gensim, Pandas, Scikit-Learn, Plotly) 
+Tools: Python (spaCy, gensim, Pandas, Scikit-Learn, Imblearn, Plotly) 
 
-Techniques: doc2vec, t-SNE, KMeans, Gaussian Mixture Models
+Techniques: doc2vec, t-SNE, KMeans, Gaussian Mixture Models, SMOTE, Logistic Regression, SVM, Random Forrest, XGboost
 
