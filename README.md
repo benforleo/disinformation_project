@@ -16,7 +16,7 @@ In a working paper, [Troll Factories: The Internet Research Agency and State-Spo
 **The Jupyter Notebook associated with this project can be viewed as rendered by [Jupyter nbviewer](https://nbviewer.jupyter.org/github/benforleo/disinformation_project/blob/master/original_scripts/labeled_tweets.ipynb).**
 
 **Tools:** Python (spaCy, gensim, Pandas, Scikit-Learn, Imblearn, Plotly)
-<br>**Techniques:** doc2vec, t-SNE, KMeans, Gaussian Mixture Models, SMOTE, Logistic Regression, SVM, Random Forrest, XGboost
+<br>**Techniques:** doc2vec, t-SNE, KMeans, Gaussian Mixture Models, SMOTE, Logistic Regression, SVM, Random Forest, XGboost
 
 ## Authors and contributors
 * [Benjamin R. Forleo](https://github.com/benforleo)
