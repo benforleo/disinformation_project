@@ -13,11 +13,14 @@ In a working paper, [Troll Factories: The Internet Research Agency and State-Spo
 * test whether the Clemseon researchers' categorization scheme can be replicated using unsupervised learning; and
 * investigate whether multi-class classifcation models can be trained to label Twitter handles in an unlabeled data set of Russian troll tweets.
 
-**The Jupyter Notebook associated with this project can be viewed as rendered by [Jupyter nbviewer](https://nbviewer.jupyter.org/github/benforleo/disinformation_project/blob/master/original_scripts/labeled_tweets.ipynb).**
-
 **Tools:** Python (spaCy, gensim, Pandas, Scikit-Learn, Imblearn, Plotly)
 <br>**Techniques:** doc2vec, t-SNE, KMeans, Gaussian Mixture Models, SMOTE, Logistic Regression, SVM, Random Forest, XGboost
 
 ## Authors and contributors
 * [Benjamin R. Forleo](https://github.com/benforleo)
 * [Anna M. Kot](https://github.com/kotanna)
+
+## Project Background
+This project was initially conceived as part of Benjamin Forleo’s *Big Data, Analytics, and Political Science* self-designed course during the Spring 2019 semester at the University of New Hampshire. 
+
+**The Jupyter Notebook associated with Benjamin's submission for this course can be viewed as rendered by [Jupyter nbviewer](https://nbviewer.jupyter.org/github/benforleo/disinformation_project/blob/master/notebooks/archive/labeled_tweets.ipynb).**
