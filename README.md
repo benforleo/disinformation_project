@@ -1,7 +1,5 @@
 # Information Warfare: Russia's use of Twitter during the 2016 US Presidential Election
 
-#### Project Status: Active
-
 On July 31, 2018, the website FiveThirtyEight [published nearly 3 million tweets](https://fivethirtyeight.com/features/why-were-sharing-3-million-russian-troll-tweets/) sent from Twitter handles connected to the Internet Research Agency(IRA), a Russian "troll factory" and a defendant in an indictment filed by the Justice Department in February 2018, as part of special counsel Robert Mueller's Russia investigation.
 
 The [data](https://github.com/fivethirtyeight/russian-troll-tweets/) is the work of Clemson University researchers [Darren Linvill](https://www.clemson.edu/cbshs/faculty-staff/profiles/darrenl) and [Patrick Warren](http://pwarren.people.clemson.edu/) who, using advanced social media tracking software and the assistance of the Clemson University Social Media Listening Center, pulled the tweets from thousands of accounts that Twitter has acknowledged as being associated with the IRA - sent between February 2012 and May 2018, with the vast majority posted from 2015 through 2017.
