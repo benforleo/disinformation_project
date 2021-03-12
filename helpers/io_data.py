@@ -6,18 +6,18 @@ class ImportData:
 
     key_list = None
 
-    def __init__(self, bucket, prefix, file_extension=".csv",  verify=True):
+    def __init__(self, bucket, prefix, file_extension=".csv", aws_access_key_id=None, aws_secret_access_key=None, verify=True):
         self.bucket = bucket
         self.prefix = prefix
         self.file_extension = file_extension
-        # self.aws_access_key_id = aws_access_key_id
-        # self.aws_secret_access_key = aws_secret_access_key
+        self.aws_access_key_id = aws_access_key_id
+        self.aws_secret_access_key = aws_secret_access_key
         self.verify = verify
 
     def retrieve_objects(self):
         client = boto3.client('s3',
-                              # aws_access_key_id=self.aws_access_key_id,
-                              # aws_secret_access_key=self.aws_secret_access_key,
+                              aws_access_key_id=self.aws_access_key_id,
+                              aws_secret_access_key=self.aws_secret_access_key,
                               verify=self.verify
                               )
 
@@ -36,7 +36,7 @@ class ImportData:
     def return_dataframe(self):
         df_list = []
         for key in self.key_list:
-            temp_df = pd.read_csv("s3://" + self.bucket + "/" + key)
+            temp_df = pd.read_csv("s3://" + self.bucket + "/" + key, low_memory=False)
             df_list.append(temp_df)
 
         return pd.concat(df_list)
