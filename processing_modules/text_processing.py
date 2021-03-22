@@ -11,15 +11,15 @@ import re
 import string
 
 
-def hashtag_pipe(doc):
+def hashtag_token(doc):
     """Create a hashtag token by merging the # token and relevant text"""
 
-    indexes = [m.span() for m in re.finditer('#[A-Za-z0-9]*', doc.text, flags=re.IGNORECASE)]
+    indexes = [m.span() for m in re.finditer(r'#\w+', doc.text, flags=re.IGNORECASE)]
 
     for start, end in indexes:
         doc.merge(start_idx=start, end_idx=end)
 
-    pattern = re.compile('#.*')
+    pattern = re.compile(r'#\w+')
     for token in doc:
         if bool(re.match(pattern, token.text)):
             token._.is_hashtag = True
@@ -27,10 +27,10 @@ def hashtag_pipe(doc):
     return doc
 
 
-def is_account_pipe(doc):
+def account_token(doc):
     """Flag user accounts with custom .is_account attribute"""
 
-    pattern = re.compile(r"@.*")
+    pattern = re.compile(r"@\w+")
 
     for token in doc:
         if bool(re.match(pattern, token.text)):
@@ -39,7 +39,7 @@ def is_account_pipe(doc):
     return doc
 
 
-def clean_doc(doc):
+def lemmatize_and_clean_document(doc):
     """Returns a list of lemmatized list of tokens free of stop words."""
 
     pattern = re.compile(r'\.+')
@@ -50,20 +50,22 @@ def clean_doc(doc):
         if token._.is_account or token._.is_hashtag:
             token_list.append(token.text)
 
-        elif (token.lemma_ != "-PRON-") and (not token.is_punct) and (not token.is_space) \
+        elif (token.lemma_ != "-PRON-") \
+                and (not token.is_punct) \
+                and (not token.is_space) \
                 and (not bool(re.fullmatch(pattern, token.lemma_))) \
-                and (not token.is_stop) and (not token.lemma_ == '�'):
+                and (not token.is_stop) \
+                and (not token.lemma_ == '�'):
 
             token_list.append(token.lemma_.lower().strip())
 
         elif token.lemma_ == "-PRON-":
-
             token_list.append(token.lower_)
 
     return token_list
 
 
-def clean_doc_no_lemma(doc):
+def clean_document(doc):
     """Returns a list of tokens, without lemmatizing or removing stopwords."""
 
     pattern = re.compile(r'\.+')
@@ -74,7 +76,8 @@ def clean_doc_no_lemma(doc):
         if token._.is_account or token._.is_hashtag:
             token_list.append(token.text)
 
-        elif (not token.is_punct) and (not token.is_space) \
+        elif (not token.is_punct) \
+                and (not token.is_space) \
                 and (not bool(re.fullmatch(pattern, token.lemma_))) \
                 and (not token.lemma_ == '�'):
 
@@ -83,7 +86,7 @@ def clean_doc_no_lemma(doc):
     return token_list
 
 
-def rt_remover(doc):
+def retweet_remover(doc):
     """Removes the RT Symbol from a string."""
 
     rt_pattern = re.compile("RT ")
@@ -118,4 +121,4 @@ def lower_case(doc):
 def group_lists(list_of_lists):
     """Flattens a list of lists into a single list. """
 
-    return [item for sublist in l for item in sublist]
+    return [item for sublist in list_of_lists for item in sublist]

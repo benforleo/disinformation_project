@@ -41,15 +41,3 @@ class ImportData:
 
         return pd.concat(df_list)
 
-
-
-#
-#
-# def import_data(bucket_name, prefix, file_extension, aws_access_key_id=None, aws_secret_access_key=None,verify=True):
-#     client = boto3.client('s3',
-#                           aws_access_key_id=aws_access_key_id,
-#                           aws_secret_access_key=aws_secret_access_key,
-#                           verify=verify
-#                           )
-#     bucket = client.get_bucket(bucket_name)
-#     bucket.objects.filter(prefix=prefix)
