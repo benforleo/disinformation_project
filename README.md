@@ -1,7 +1,5 @@
 # Information Warfare: Russia's use of Twitter during the 2016 US Presidential Election
 
-#### Project Status: Active
-
 On July 31, 2018, the website FiveThirtyEight [published nearly 3 million tweets](https://fivethirtyeight.com/features/why-were-sharing-3-million-russian-troll-tweets/) sent from Twitter handles connected to the Internet Research Agency(IRA), a Russian "troll factory" and a defendant in an indictment filed by the Justice Department in February 2018, as part of special counsel Robert Mueller's Russia investigation.
 
 The [data](https://github.com/fivethirtyeight/russian-troll-tweets/) is the work of Clemson University researchers [Darren Linvill](https://www.clemson.edu/cbshs/faculty-staff/profiles/darrenl) and [Patrick Warren](http://pwarren.people.clemson.edu/) who, using advanced social media tracking software and the assistance of the Clemson University Social Media Listening Center, pulled the tweets from thousands of accounts that Twitter has acknowledged as being associated with the IRA - sent between February 2012 and May 2018, with the vast majority posted from 2015 through 2017.
@@ -23,4 +21,8 @@ In a working paper, [Troll Factories: The Internet Research Agency and State-Spo
 ## Project Background
 This project was initially conceived as part of Benjamin Forleo’s *Big Data, Analytics, and Political Science* self-designed course during the Spring 2019 semester at the University of New Hampshire. 
 
-**The Jupyter Notebook associated with Benjamin's submission for this course can be viewed as rendered by [Jupyter nbviewer](https://nbviewer.jupyter.org/github/benforleo/disinformation_project/blob/master/notebooks/archive/labeled_tweets.ipynb).**
+**The Jupyter Notebook associated with Benjamin's submission for this course can be viewed as rendered by [Jupyter nbviewer](https://nbviewer.jupyter.org/github/benforleo/disinformation_project/blob/master/archive/labeled_tweets.ipynb).**
+
+## Results
+
+![T-SNE representation of Document Vectors](img/tsne-docvecs.png)
