@@ -22,3 +22,7 @@ In a working paper, [Troll Factories: The Internet Research Agency and State-Spo
 This project was initially conceived as part of Benjamin Forleo’s *Big Data, Analytics, and Political Science* self-designed course during the Spring 2019 semester at the University of New Hampshire. 
 
 **The Jupyter Notebook associated with Benjamin's submission for this course can be viewed as rendered by [Jupyter nbviewer](https://nbviewer.jupyter.org/github/benforleo/disinformation_project/blob/master/archive/labeled_tweets.ipynb).**
+
+## Results
+
+![T-SNE representation of Document Vectors](img/tsne-docvecs.png)
