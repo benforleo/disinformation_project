@@ -23,6 +23,15 @@ This project was initially conceived as part of Benjamin Forleo’s *Big Data, A
 
 **The Jupyter Notebook associated with Benjamin's submission for this course can be viewed as rendered by [Jupyter nbviewer](https://nbviewer.jupyter.org/github/benforleo/disinformation_project/blob/master/archive/labeled_tweets.ipynb).**
 
+## Procedure
+
+The procedure employed in this analysis involves cleaning the text associated with each tweet, aggregating tweets by account, 
+creating document embeddings and analyzing the results.    
+
+<p align="center">
+  <img width="720" height="1296" src="https://github.com/benforleo/disinformation_project/blob/master/img/disinformation-project-procedure.png?raw=true">
+</p>
+
 ## Results
 
 ![T-SNE representation of Document Vectors](img/tsne-docvecs.png)
