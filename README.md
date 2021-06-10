@@ -11,8 +11,8 @@ In a working paper, [Troll Factories: The Internet Research Agency and State-Spo
 * test whether the Clemseon researchers' categorization scheme can be replicated using unsupervised learning; and
 * investigate whether multi-class classifcation models can be trained to label Twitter handles in an unlabeled data set of Russian troll tweets.
 
-**Tools:** Python (spaCy, gensim, Pandas, Scikit-Learn, Imblearn, Plotly)
-<br>**Techniques:** doc2vec, t-SNE, KMeans, Gaussian Mixture Models, SMOTE, Logistic Regression, SVM, Random Forest, XGboost
+**Tools:** Python (spaCy, gensim, Pandas, Scikit-Learn, Plotly)
+<br>**Techniques:** doc2vec, t-SNE, Logistic Regression
 
 ## Authors and contributors
 * [Benjamin R. Forleo](https://github.com/benforleo)
@@ -29,7 +29,7 @@ The procedure employed in this analysis involves cleaning the text associated wi
 creating document embeddings and analyzing the results.    
 
 <p align="center">
-  <img width="720" height="1296" src="https://github.com/benforleo/disinformation_project/blob/master/img/disinformation-project-procedure.png?raw=true">
+  <img width="800" height="1277.6" src="https://github.com/benforleo/disinformation_project/blob/master/img/disinformation-project-procedure.png?raw=true">
 </p>
 
 ## Results
