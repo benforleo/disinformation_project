@@ -53,13 +53,13 @@ account, creating document embeddings and analyzing the results.
 
 ## Results
 
-|author      |account_category|0          |1          |2          |.....      |302        |
+|author      |account_category|0          |1          |2          |......      |302        |
 |------------|----------------|-----------|-----------|-----------|-----------|-----------|
-|10_GOP      |RightTroll      |-0.03119075|0.07216399 |0.002935304|.....      |-0.12273663|
-|4MYSQUAD    |LeftTroll       |-1.8998734 |-0.6640599 |-0.21586983|.....      |-0.43668124|
-|AANTIRACIST |LeftTroll       |-0.19144773|-0.3095436 |-0.15882353|.....      |-0.2856187 |
-|ABIGAILSSILK|HashtagGamer    |-0.4766572 |-0.8711019 |0.7585614  |.....      |-0.8887055 |
-|ABIISSROSB  |RightTroll      |-0.30114922|-0.6279655 |0.24099341 |.....      |-0.40076506|
+|10_GOP      |RightTroll      |-0.03119075|0.07216399 |0.002935304|......      |-0.12273663|
+|4MYSQUAD    |LeftTroll       |-1.8998734 |-0.6640599 |-0.21586983|......      |-0.43668124|
+|AANTIRACIST |LeftTroll       |-0.19144773|-0.3095436 |-0.15882353|......      |-0.2856187 |
+|ABIGAILSSILK|HashtagGamer    |-0.4766572 |-0.8711019 |0.7585614  |......      |-0.8887055 |
+|ABIISSROSB  |RightTroll      |-0.30114922|-0.6279655 |0.24099341 |......      |-0.40076506|
 
 <p align="center">
   <img width="700" height="500" src="https://github.com/benforleo/disinformation_project/blob/master/img/tsne-docvecs.png?raw=true">
