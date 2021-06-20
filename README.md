@@ -53,6 +53,9 @@ account, creating document embeddings and analyzing the results.
 
 ## Results
 
+After cleaning the tweet text, concatenating and grouping tweets by accounts, and embedding the concatenated text 
+using doc2vec, we produce a data frame where each row contains a 300 dimension vector representation of everything 
+a particular account has ever tweeted. Also included are the labels provided in the Linvill and Warren dataset.
 
 
 |author      |account_category|0          |1          |2          |......      |299        |
@@ -63,8 +66,23 @@ account, creating document embeddings and analyzing the results.
 |ABIGAILSSILK|HashtagGamer    |-0.4766572 |-0.8711019 |0.7585614  |......      |-0.8887055 |
 |ABIISSROSB  |RightTroll      |-0.30114922|-0.6279655 |0.24099341 |......      |-0.40076506|
 
+---
+### t-SNE visualization
+
+We can visualize our high dimensional data with help from the t-SNE algorithm. The results suggest that distinct clusters
+exist in our data which are generally inline with the account labels. 
+
 <p align="center">
   <img width="700" height="500" src="https://github.com/benforleo/disinformation_project/blob/master/img/tsne-docvecs.png?raw=true">
 </p>
+
+---
+### Logistic Regression
+
+---
+
+
+## Discussion
+
 
 
